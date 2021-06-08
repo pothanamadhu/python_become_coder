@@ -8,3 +8,12 @@ n=int(input())
 data=list(map(int,input().split()))
 d=original(n,data)
 print(*d)
+k=len(d)
+for i in d:
+      t=data.count(i)
+      if t<k:
+            k=t
+for i in d:
+      if data.count(i)==k:
+            print(i,end=" ")
+      
